@@ -7,7 +7,7 @@ herokuで動作するフロントページ
 import flask
 from flask import request
 import aaa
-# import pgtest
+import pgtest
 
 app = flask.Flask(__name__)
 
