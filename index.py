@@ -6,6 +6,7 @@ herokuで動作するフロントページ
 
 import flask
 from flask import request
+import pgtest
 
 app = flask.Flask(__name__)
 
@@ -32,7 +33,12 @@ def abc():
     print(req)
     print(req['text'])
 
-    result = {"hoge": "fuga"}
+    ret = pgtest.get_param()
+
+    print(ret)
+
+    # result = {"hoge": "fuga"}
+    result = ret
     return flask.jsonify(result)
 
 
