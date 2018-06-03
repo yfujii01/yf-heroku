@@ -21,6 +21,9 @@ else:
 
 def exe():
     print('hello')
+
+    print(get_param())
+
     return 'xyz'
 
 
