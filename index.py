@@ -16,7 +16,7 @@ def index():
     動作確認用
     :return: hello worldのページ
     """
-    return "hello world"
+    return "hello world!"
 
 
 @app.route('/abc', methods=['POST'])
