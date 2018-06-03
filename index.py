@@ -19,7 +19,7 @@ def index():
     """
 
     # return "hello world!" + aaa.exe()
-    return aaa.get_param()
+    return str(aaa.get_param())
 
 
 @app.route('/abc', methods=['POST'])
