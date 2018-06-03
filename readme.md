@@ -1,5 +1,12 @@
 pip freeze > requirements.txt
 
+## パラメータ設定方法
+
+echo `heroku config --shell`> .env
+
+## heroku アップロード前
+pip freeze > requirements.txt
+
 
 ## db仕様
 
@@ -18,7 +25,7 @@ insert into T_Param (id,val,rem) values('piurl','http://xxx.yyy.zzz','ラズパ�
 ```
 
 ## db確認方法
-heroku pg:credentials:url -a yf-heroku
+heroku pg:credentials:url
 
 Connection URL:が取得できるので
 

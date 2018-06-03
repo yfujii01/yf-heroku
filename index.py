@@ -24,7 +24,7 @@ def index():
 def abc():
     """
     json送受信サンプル
-    curl -H 'Content-Type:application/json' -d '{"text":"bbb"}' http://localhost:3000/abc
+    curl -H 'Content-Type:application/json' -d '{"text":"bbb"}' http://localhost:5000/abc
     :return: jsonサンプル
     """
 
@@ -37,8 +37,8 @@ def abc():
 
     print(ret)
 
-    # result = {"hoge": "fuga"}
-    result = ret
+    result = {"hoge": "fuga"}
+    # result = ret
     return flask.jsonify(result)
 
 
