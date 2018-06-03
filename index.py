@@ -6,7 +6,7 @@ herokuで動作するフロントページ
 
 import flask
 from flask import request
-import pgtest
+# import pgtest
 
 app = flask.Flask(__name__)
 
@@ -33,9 +33,9 @@ def abc():
     print(req)
     print(req['text'])
 
-    ret = pgtest.get_param()
-
-    print(ret)
+    # ret = pgtest.get_param()
+    #
+    # print(ret)
 
     result = {"hoge": "fuga"}
     # result = ret
