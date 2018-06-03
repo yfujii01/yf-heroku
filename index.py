@@ -6,6 +6,7 @@ herokuで動作するフロントページ
 
 import flask
 from flask import request
+import aaa
 # import pgtest
 
 app = flask.Flask(__name__)
@@ -17,7 +18,8 @@ def index():
     動作確認用
     :return: hello worldのページ
     """
-    return "hello world!"
+
+    return "hello world!" + aaa.exe()
 
 
 @app.route('/abc', methods=['POST'])
